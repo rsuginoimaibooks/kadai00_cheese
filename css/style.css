@@ -1,0 +1,328 @@
+/* ここから下に記載していく */
+.yokonarabi{
+    display: flex;
+}
+
+.midashi{
+    /* 背景色 */
+    background-color: white;
+    /* 外側の余白 */
+    margin:  40px;
+    /* 内側の余白 */
+    padding:  10px;
+    /* フォントサイズ */
+    font-size: 21px;
+}
+
+.oya{
+    /*親要素にrelative*/
+    position: relative;
+    /* 画像を真ん中へ配置 */
+    width: 80%;
+    display: block;
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+.ko1{
+    font-size: 50px;
+    font-weight: bolder;
+    position: absolute;/*重ねたい子要素にabsolute*/
+    top:40%;
+    right: auto;
+    left: 40%;
+    -ms-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    -webkit-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    transform: translate(-50%,-50%);/*センター寄せの修正*/
+    color:white;
+    margin: 0!important;/*文字がずれている場合や*/
+    padding: 0!important;/*文字が折り返される場合*/
+}
+
+.ko2{
+    font-size: 30px;
+    position: absolute;/*重ねたい子要素にabsolute*/
+    top:55%;
+    right: auto;
+    left: 40%;
+    -ms-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    -webkit-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    transform: translate(-50%,-50%);/*センター寄せの修正*/
+    color:white;
+    margin: 0!important;/*文字がずれている場合や*/
+    padding: 0!important;/*文字が折り返される場合*/
+}
+
+.about-menu{
+    font-style: 24px;
+    font-weight: bolder;
+    color: #ffd61a;
+    /* 外側の余白 */
+    margin:  60px;
+    /* 真ん中配置 */
+    margin-left: 700px;
+}
+
+.setsumei{
+    font-style: 18px;
+    color: #222222;
+    margin:  40px;
+    padding:  10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 460px;
+}
+
+.course-menu{
+    font-style: 24px;
+    font-weight: bolder;
+    color: #222222;
+    /* 外側の余白 */
+    margin:  60px;
+    /* 真ん中配置 */
+    margin-left: 700px;
+}
+
+.jiguzagu{
+    display: flex;
+}
+
+.koushi-e {
+    margin: 0px;
+    margin-left: 50px;
+}
+
+.koushi-setsumei{
+    padding: 50px;
+    margin: 0px;
+    width:632px;
+    background: #fafafa;
+    font-size:18px;
+    color:#222222;
+    align-items:center;
+    justify-content:center;
+}
+
+.koushi-midashi{
+    font-style: 18px;
+    font-weight: bolder;
+    color: #222222;
+}
+
+.pizzanarabi{
+    display: flex;
+    margin-left: 200px;
+}
+
+.pizza{
+    padding: 30px;
+    margin: 0px;
+}
+
+.pizza-setsumei{
+    font-size: small;
+    align-items:center;
+    justify-content:center;
+    margin: 40px;
+}
+
+.more{
+    font-style: 18px;
+    color: #fafafa;
+    background-color: #ffd61a;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    text-decoration: none;
+    display: block;
+    max-width: 250px;
+    margin-top: 60px;
+    margin-left: 600px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.8;
+    text-decoration: none;
+    outline: none;
+    transition: ease .2s;
+}
+
+.p-map {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-left: 450px;
+}
+
+.info{
+    font-size: large;
+    margin: 30px;
+}
+
+.access-back{
+    background-color: #fafafa;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: ease .2s;
+}
+
+.Form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+}
+@media screen and (max-width: 480px) {
+.Form {
+margin-top: 40px;
+}
+}
+.Form-Item {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 480px) {
+    .Form-Item {
+padding-left: 14px;
+padding-right: 14px;
+padding-top: 16px;
+padding-bottom: 16px;
+flex-wrap: wrap;
+    }
+}
+.Form-Item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+    .Form-Item-Label {
+max-width: inherit;
+display: flex;
+align-items: center;
+font-size: 15px;
+    }
+}
+.Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+    .Form-Item-Label.isMsg {
+margin-top: 0;
+    }
+}
+.Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #5bc8ac;
+    color: #fff;
+    font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+    }
+}
+.Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+    .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+    }
+}
+.Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+    .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+    }
+}
+.Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #5bc8ac;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen and (max-width: 480px) {
+    .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+    }
+}
+
+
+
+
+
+.footer{
+    color: #fafafa;
+    background-color: #707070;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
